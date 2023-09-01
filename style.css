@@ -1,0 +1,157 @@
+:root {
+  --title-color: #121212;
+  --text-color: #656565;
+  --button-bg-color: #ff5634;
+  --button-active-color: #fff;
+  --button-color: #121212;
+}
+
+.page {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Roboto", Helvetica sans-serif;
+}
+
+/* HEADER  */
+
+.header {
+  box-sizing: border-box;
+  max-width: 1440px;
+  min-width: 1101px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 32px 109px;
+  margin: 0 auto;
+  box-shadow: 0px 3px 12px 0px rgba(18, 18, 18, 0.06);
+}
+
+.header__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__mob-button {
+    display: none; 
+    cursor: pointer;
+}
+
+.menu {
+  margin: 0 44px;
+  transition: all 1.1s linear;
+}
+
+.menu__list {
+  display: flex;
+  align-items: center;
+  gap: 26px;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.menu__link {
+  color: var(--text-color);
+  font-size: 16px;
+  line-height: 1.12;
+  text-decoration: none;
+}
+
+.menu__link:hover {
+  color: #ff5634;
+}
+
+.menu__link_active {
+  color: #ff5634;
+}
+
+.header__cart {
+  position: relative;
+  margin-right: 32px;
+  color: var(--button-color);
+  font-size: 16px;
+  line-height: 1.12;
+}
+
+.header__cart::after {
+  content: "(" attr(data-cart) ")";
+}
+
+.header__controls-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.button {
+  padding: 26px 39px;
+  border: 1px solid;
+  border-radius: 16px;
+  font-size: 18px;
+  line-height: 1.11;
+  cursor: pointer;
+}
+
+.button_register {
+  border-color: var(--button-bg-color);
+  background-color: var(--button-bg-color);
+  color: var(--button-active-color);
+}
+
+.button_download {
+  border-color: #ededed;
+  background-color: var(--button-bg-color);
+  color: var(--button-active-color);
+}
+
+.button_header-controls {
+  padding: 19px 25px;
+  border-radius: 12px;
+  font-size: 16px;
+}
+
+.button_header-download {
+  padding: 19px 29px;
+  border: 1px solid #ededed;
+  background: #fff;
+  color: var(--button-color);
+  line-height: 1.125;
+  text-decoration: none;
+}
+
+.button_header-user {
+  border: none;
+  background: var(--button-bg-color);
+  color: var(--button-active-color);
+  letter-spacing: 0.5px;
+}
+
+@media (max-width: 1200px) { 
+    .header__mob-button {
+        order: 4;
+        display: block;
+        margin-left: 18px; 
+    }
+
+    .menu {
+        width: 20%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        right: 80%;
+        margin: 0;
+        background: #ff5634;
+    }
+
+    .menu__list {
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 32px;
+    }
+
+    .menu__link {
+        color: #fff;
+    }
+
+ }
