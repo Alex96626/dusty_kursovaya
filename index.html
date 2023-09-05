@@ -1,51 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
+    >
+    <link rel="stylesheet" href="style.css" >
     <title>Курсовая работа</title>
   </head>
   <body class="page">
     <header class="header">
-      <a href="" class="logo">
-        <img src="./images/logo.svg" alt="logo" />
-      </a>
-      <div class="header__wrapper">
-        <button class="header__mob-button">
+      <div class="container header__container">
+        <a href="" class="logo">
+          <img src="./images/logo.svg" alt="logo">
+        </a>
+        <div class="header__wrapper">
+          <button class="header__mob-button">
             <svg viewBox="0 0 64 48" class="header__mob-menu-svg">
-                <path class="header__mob-menu-path header__mob-menu-path_top" d="M19,15 L45,15 C70,15 58,-2 49.0177126,7 L19,37"></path>
-                <path class="header__mob-menu-path header__mob-menu-path_midle" d="M19,24 L45,24 C61.2371586,24 57,49 41,33 L32,24"></path>
-                <path class="header__mob-menu-path header__mob-menu-path_bottom" d="M45,33 L19,33 C-8,33 6,-2 22,14 L45,37"></path>
+              <path
+                class="header__mob-menu-path header__mob-menu-path_top"
+                d="M19,15 L45,15 C70,15 58,-2 49.0177126,7 L19,37"
+              ></path>
+              <path
+                class="header__mob-menu-path header__mob-menu-path_midle"
+                d="M19,24 L45,24 C61.2371586,24 57,49 41,33 L32,24"
+              ></path>
+              <path
+                class="header__mob-menu-path header__mob-menu-path_bottom"
+                d="M45,33 L19,33 C-8,33 6,-2 22,14 L45,37"
+              ></path>
             </svg>
-        </button>
-        <nav class="menu">
-          <ul class="menu__list">
-            <li><a href="" class="menu__link menu__link_active">Home</a></li>
-            <li><a href="" class="menu__link">About</a></li>
-            <li><a href="" class="menu__link">Pricing</a></li>
-            <li><a href="" class="menu__link">Pages</a></li>
-          </ul>
-        </nav>
-        <a class="header__cart" data-cart="0">Cart</a>
-        <div class="header__controls-wrapper">
-          <a
-            class="button button_header-controls button_header-download"
-            href="#"
-            download=""
-            >Download app</a
-          >
-          <button class="button button_header-controls button_header-user">
-            Register
           </button>
+          <nav class="menu">
+            <ul class="menu__list">
+              <li><a href="" class="menu__link menu__link_active">Home</a></li>
+              <li><a href="" class="menu__link">About</a></li>
+              <li><a href="" class="menu__link">Pricing</a></li>
+              <li><a href="" class="menu__link">Pages</a></li>
+            </ul>
+          </nav>
+          <a class="header__cart" data-cart="0">Cart</a>
+          <div class="header__controls-wrapper button-list">
+            <a
+              class="button button_header-controls button_header-download"
+              href="#"
+              download=""
+              >Download app</a
+            >
+            <button class="button button_header-controls button_header-user">
+              Register
+            </button>
+          </div>
         </div>
       </div>
     </header>
+    <main>
+      <section class="service">
+        <div class="container">
+          <article class="service__content">
+            <div class="service__content_wrapper">
+              <p class="sub-title">Food Delivery Service</p>
+              <h1 class="title">Delicious food at your fingertips</h1>
+              <p class="description">
+                A ultricies eget condimentum sed faucibus enim maecenas variusd dolor
+                sitegestas hendrerit et maecenas habitant mattis
+              </p>
+              <div class="button-list">
+                  <button class="button">Register restaurant</button>
+                  <a class="button" href="#" download="">Download app</a>
+              </div>
+              <ul class="service__counter">
+                  <li class="service__counter-item">
+                      <p class="service__counter-size">10M</p>
+                      <small class="service__counter-description">Happy customers</small>
+                  </li>
+                  <li class="service__counter-item">
+                      <p class="service__counter-size">500k</p>
+                      <small class="service__counter-description">Restaurants available</small>
+                  </li>
+                  <li class="service__counter-item">
+                      <p class="service__counter-size">30M</p>
+                      <small class="service__counter-description">Successful deliveries</small>
+                  </li>
+              </ul>
+            </div>
+            <div class="service__img">
+              <img src="./images/restaurants.png" alt="">
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
