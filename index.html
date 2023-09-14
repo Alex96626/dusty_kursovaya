@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
-    >
-    <link rel="stylesheet" href="style.css" >
+    />
+    <link rel="stylesheet" href="style.css" />
     <title>Курсовая работа</title>
   </head>
   <body class="page">
     <header class="header">
       <div class="container header__container">
         <a href="" class="logo">
-          <img src="./images/logo.svg" alt="logo">
+          <img class="logo__image" src="./images/logo.svg" alt="logo" />
         </a>
         <div class="header__wrapper">
           <button class="header__mob-button">
@@ -35,23 +35,27 @@
               ></path>
             </svg>
           </button>
-          <nav class="menu">
-            <ul class="menu__list">
-              <li><a href="" class="menu__link menu__link_active">Home</a></li>
-              <li><a href="" class="menu__link">About</a></li>
-              <li><a href="" class="menu__link">Pricing</a></li>
-              <li><a href="" class="menu__link">Pages</a></li>
+          <nav class="header__menu">
+            <ul class="header__menu-list">
+              <li>
+                <a href="" class="header__menu-link header__menu-link_active"
+                  >Home</a
+                >
+              </li>
+              <li><a href="" class="header__menu-link">About</a></li>
+              <li><a href="" class="header__menu-link">Pricing</a></li>
+              <li><a href="" class="header__menu-link">Pages</a></li>
             </ul>
           </nav>
           <a class="header__cart" data-cart="0">Cart</a>
-          <div class="header__controls-wrapper button-list">
+          <div class="header__button-list button-list">
             <a
-              class="button button_header-controls button_header-download"
+              class="button button_theme-secondary header__button header__button_secondary"
               href="#"
               download=""
-              >Download app</a
-            >
-            <button class="button button_header-controls button_header-user">
+              >Download app
+            </a>
+            <button class="button button_theme-primary header__button">
               Register
             </button>
           </div>
@@ -63,33 +67,143 @@
         <div class="container">
           <article class="service__content">
             <div class="service__content_wrapper">
-              <p class="sub-title">Food Delivery Service</p>
-              <h1 class="title">Delicious food at your fingertips</h1>
-              <p class="description">
-                A ultricies eget condimentum sed faucibus enim maecenas variusd dolor
-                sitegestas hendrerit et maecenas habitant mattis
+              <p class="sub-title service__sub-title">Food Delivery Service</p>
+              <h1
+                class="title title_size_l title_theme_default-bold service__title"
+              >
+                Delicious food at your fingertips
+              </h1>
+              <p class="description service__description">
+                A ultricies eget condimentum sed faucibus enim maecenas variusd
+                dolor sitegestas hendrerit et maecenas habitant mattis
               </p>
-              <div class="button-list">
-                  <button class="button">Register restaurant</button>
-                  <a class="button" href="#" download="">Download app</a>
+              <div class="service__button-list button-list">
+                <button class="button button_theme-primary">
+                  Register restaurant
+                </button>
+                <a class="button button_theme-secondary" href="#" download=""
+                  >Download app</a
+                >
               </div>
               <ul class="service__counter">
-                  <li class="service__counter-item">
-                      <p class="service__counter-size">10M</p>
-                      <small class="service__counter-description">Happy customers</small>
-                  </li>
-                  <li class="service__counter-item">
-                      <p class="service__counter-size">500k</p>
-                      <small class="service__counter-description">Restaurants available</small>
-                  </li>
-                  <li class="service__counter-item">
-                      <p class="service__counter-size">30M</p>
-                      <small class="service__counter-description">Successful deliveries</small>
-                  </li>
+                <li class="service__counter-item">
+                  <p class="service__counter-size">10M</p>
+                  <small class="service__counter-description"
+                    >Happy customers</small
+                  >
+                </li>
+                <li class="service__counter-item">
+                  <p class="service__counter-size">500k</p>
+                  <small class="service__counter-description"
+                    >Restaurants available</small
+                  >
+                </li>
+                <li class="service__counter-item">
+                  <p class="service__counter-size">30M</p>
+                  <small class="service__counter-description"
+                    >Successful deliveries</small
+                  >
+                </li>
               </ul>
             </div>
             <div class="service__img">
-              <img src="./images/restaurants.png" alt="">
+              <img src="./images/restaurants.png" alt="" />
+            </div>
+          </article>
+          <div class="service__partners">
+            <p class="service__partners-description description">
+              Trusted by 5,000+ restaurants around the world
+            </p>
+            <ul class="service__partners_list">
+              <li class="service__partners_item">
+                <img src="./images/partner_1.svg" alt="" />
+              </li>
+              <li class="service__partners_item">
+                <img src="./images/partner_2.svg" alt="" />
+              </li>
+              <li class="service__partners_item">
+                <img src="./images/partner_3.svg" alt="" />
+              </li>
+              <li class="service__partners_item">
+                <img src="./images/partner_4.svg" alt="" />
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="work">
+        <div class="container">
+          <p class="sub-title work__sub-title sub-title_position_middle">How it work</p>
+          <h2 class="work__title title title_size_s title_theme_default-bold">
+            Our simple, yet efficient delivery system
+          </h2>
+          <p class="description work__description">
+            Lorem ipsum dolor sit amet consectetur adipiscing elit tortor eu
+            egestas morbi sem vulputate etiam facilisis pellentesque
+          </p>
+          <ul class="work__list">
+            <li class="work__item">
+              <img src="./images/work_1.png" alt="" class="work__img" />
+              <h2 class="work__item-title">
+                Create a free account at Deliver X today
+              </h2>
+              <p class="work__item-description">
+                Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit
+                phasellus mollis sit aliquam
+              </p>
+            </li>
+            <li class="work__item">
+              <img src="./images/work_2.png" alt="" class="work__img" />
+              <h2 class="work__item-title">
+                Order from your favorite restaurant
+              </h2>
+              <p class="work__item-description">
+                Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit
+                phasellus mollis sit aliquam
+              </p>
+            </li>
+            <li class="work__item">
+              <img src="./images/work_3.png" alt="" class="work__img" />
+              <h2 class="work__item-title">
+                Receive right in your house, hassle-free
+              </h2>
+              <p class="work__item-description">
+                Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit
+                phasellus mollis sit aliquam
+              </p>
+            </li>
+          </ul>
+          <div class="work__button-list button-list">
+            <button class="button button_theme-primary">Register restaurant</button>
+            <a class="button button_theme-secondary" href="#" download=""
+              >Download app
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="service">
+        <div class="container">
+          <article class="service__content">
+            <div class="service__content_wrapper">
+              <h1
+                class="title title_size_s title_theme_default-bold service__title"
+              >
+                Learn why Deliver X is great for your restaurant
+              </h1>
+              <p class="description service__description">
+                Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit phasellus mollis sit aliquam sit nullam
+              </p>
+              <div class="service__button-list button-list">
+                <button class="button button_theme-primary">
+                  Register restaurant
+                </button>
+                <a class="button button_theme-secondary" href="#" download=""
+                  >Download app</a
+                >
+              </div>
+            </div>
+            <div class="service__img">
+              <img src="./images/burger.png" alt="" />
             </div>
           </article>
         </div>
